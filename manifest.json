@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Is There A Cubs Game Today?",
+  "short_name": "IsThereACubsGameToday",
+  "version": "1.11",
+  "description": "Adds an icon indicating if there is a Cubs game today and at what time.  Enable 'Fan Mode' to get real-time game updates!",
+  "offline_enabled": false,
+  
+  "background": {
+    "scripts": ["jquery-1.10.2.js","moment.min.js","moment-timezone-with-data.min.js","background.js"]
+  },
+  
+  "permissions": [
+    "alarms",
+    "storage",
+    "contextMenus",
+    "webRequest",
+    "*://isthereacubsgametoday.com/"
+   ],
+
+  "browser_action": {
+    "default_icon": "cubs_bw_nobg_128.png"
+  },
+
+  "icons": {
+      "128": "cubs_color_nobg_128.png"
+  }
+}
